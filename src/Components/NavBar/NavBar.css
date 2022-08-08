@@ -1,0 +1,11 @@
+.navbar-wrap {
+  align-self: center;
+  width: 80%;
+  height: 100px;
+  background: linear-gradient(rgb(149, 103, 227), rgb(52, 131, 156));
+  border-radius: 64px;
+  box-shadow: 6px 6px 6px rgb(0, 0, 0, 0.2);
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+}
