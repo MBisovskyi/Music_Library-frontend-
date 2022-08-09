@@ -7,6 +7,7 @@
   box-shadow: 6px 6px 6px rgb(0, 0, 0, 0.2);
   border: 1px solid rgb(0, 0, 0, 0.1);
   position: fixed;
+  display: flex;
   justify-content: space-around;
   align-items: center;
   left: 50%;
@@ -14,14 +15,18 @@
   top: 6.5rem;
   z-index: 2;
   padding: 0.5rem;
-  display: flex;
-  color: #ffffff;
+}
+
+.search-field-wrap button {
   font-family: "Comic Sans MS";
   font-size: 18px;
   font-weight: 800;
+  color: #ffffff;
   text-transform: uppercase;
+  border-style: none;
+  background: none;
 }
 
-.search-field-wrap span:hover {
+.search-field-wrap button:hover {
   border-bottom: 2px solid #ffffff;
 }

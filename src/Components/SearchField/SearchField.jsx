@@ -4,16 +4,16 @@ const SearchField = (props) => {
   return (
     <div className="search-field-wrap">
       <div className="search-field-item">
-        <span>artist/band</span>
+        <button>artist/band</button>
       </div>
       <div className="search-field-item">
-        <span>album</span>
+        <button>album</button>
       </div>
       <div className="search-field-item">
-        <span>release date</span>
+        <button>release date</button>
       </div>
       <div className="search-field-item">
-        <span>genre</span>
+        <button>genre</button>
       </div>
     </div>
   );

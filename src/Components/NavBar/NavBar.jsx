@@ -1,5 +1,5 @@
 import "./NavBar.css";
-import disk from "./assets/disk.png";
+import disk from "./assets/disk2.png";
 
 const NavBar = (props) => {
   return (
