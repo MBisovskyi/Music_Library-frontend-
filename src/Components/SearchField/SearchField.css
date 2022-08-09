@@ -1,0 +1,27 @@
+.search-field-wrap {
+  height: 2.5rem;
+  width: 70%;
+  background-color: #207faa;
+  margin: auto;
+  border-radius: 60px;
+  box-shadow: 6px 6px 6px rgb(0, 0, 0, 0.2);
+  border: 1px solid rgb(0, 0, 0, 0.1);
+  position: fixed;
+  justify-content: space-around;
+  align-items: center;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 6.5rem;
+  z-index: 2;
+  padding: 0.5rem;
+  display: flex;
+  color: #ffffff;
+  font-family: "Comic Sans MS";
+  font-size: 18px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.search-field-wrap span:hover {
+  border-bottom: 2px solid #ffffff;
+}
