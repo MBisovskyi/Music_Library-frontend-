@@ -1,0 +1,21 @@
+.add-song-wrap {
+  width: 80%;
+  margin: auto;
+  margin-top: 10rem;
+  text-align: center;
+}
+
+.add-song-item {
+  margin: 0 1rem;
+}
+
+.input-container {
+  margin-left: 0.5rem;
+}
+
+.add-song-button-container {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  margin-top: 1rem;
+}
