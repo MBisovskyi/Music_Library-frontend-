@@ -37,13 +37,19 @@
 }
 
 .likes-container {
+  width: 100%;
   font-size: 28px;
   align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 .likes-container button {
   border-style: none;
   background: none;
+  height: 20px;
+  width: 20px;
+  margin-bottom: 5px;
 }
 
 .likes-container button:hover {

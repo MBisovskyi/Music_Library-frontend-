@@ -15,7 +15,7 @@ const DisplayMusic = ({ NewMusic }) => {
         </div>
       </div>
       <div className="likes-container">
-        17
+        <div>17</div>
         <button>
           <svg
             xmlns="http://www.w3.org/2000/svg"
