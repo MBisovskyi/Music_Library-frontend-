@@ -35,3 +35,17 @@
   font-size: 24px;
   font-weight: 800;
 }
+
+.likes-container {
+  font-size: 28px;
+  align-items: center;
+}
+
+.likes-container button {
+  border-style: none;
+  background: none;
+}
+
+.likes-container button:hover {
+  transform: scale(1.1);
+}
