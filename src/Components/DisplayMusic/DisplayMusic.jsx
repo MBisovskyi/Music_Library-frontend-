@@ -1,4 +1,5 @@
 import "./DisplayMusic.css";
+import DeleteSong from "../DeleteSong/DeleteSong";
 
 const DisplayMusic = (props) => {
   return (
@@ -7,6 +8,7 @@ const DisplayMusic = (props) => {
         return (
           <div className="display-music-wrap" key={index}>
             <p className="music-title">{song.title}</p>
+            <DeleteSong songId={song.id} />
             <div className="music-content-conteiner">
               <div className="display-music-item">
                 <p>Artist/Band: {song.artist}</p>

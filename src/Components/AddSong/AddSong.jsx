@@ -9,7 +9,7 @@ const AddSong = (props) => {
   const [newGenre, setGenre] = useState("");
   const [newReleasedDate, setReleasedDate] = useState("");
 
-  async function handleSubmit(event) {
+  async function handleSubmit() {
     let newSong = {
       title: newTitle,
       artist: newArtist,

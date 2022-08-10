@@ -13,20 +13,15 @@ function App() {
     getSongs();
   }, [setSongs]);
 
-  async function filteredSongs(newSongs) {
-    setSongs(newSongs);
-  }
-
   async function getSongs() {
     let response = await axios.get("http://127.0.0.1:8000/songs/");
     setSongs(response.data);
-    console.log(response.data);
   }
 
   return (
     <div className="app">
       <NavBar />
-      <SearchField newSongs={filteredSongs} />
+      <SearchField newSongs={setSongs} />
       <div className="all-songs">
         <button onClick={getSongs}>All Songs</button>
       </div>
