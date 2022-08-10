@@ -53,3 +53,8 @@
 .likes-container button:hover {
   transform: scale(1.1);
 }
+
+.delete-button-wrap {
+  text-align: end;
+  margin-top: 2rem;
+}

@@ -7,7 +7,7 @@ const DeleteSong = (props) => {
     props.newSongs();
   }
   return (
-    <div>
+    <div className="delete-container">
       <button onClick={deleteClickHandle}>Delete</button>
     </div>
   );
