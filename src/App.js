@@ -10,10 +10,14 @@ function App() {
   const [songs, setSongs] = useState([]);
 
   useEffect(() => {
-    getAllSongs();
-  }, []);
+    getSongs();
+  }, [setSongs]);
 
-  async function getAllSongs() {
+  async function filteredSongs(newSongs) {
+    setSongs(newSongs);
+  }
+
+  async function getSongs() {
     let response = await axios.get("http://127.0.0.1:8000/songs/");
     setSongs(response.data);
     console.log(response.data);
@@ -22,12 +26,12 @@ function App() {
   return (
     <div className="app">
       <NavBar />
-      <SearchField />
+      <SearchField newSongs={filteredSongs} />
       <div className="all-songs">
-        <button onClick={getAllSongs}>All Songs</button>
+        <button onClick={getSongs}>All Songs</button>
       </div>
-      <AddSong />
-      <DisplayMusic allSongs={songs} />
+      <AddSong newSong={setSongs} />
+      <DisplayMusic displaySongs={songs} />
     </div>
   );
 }

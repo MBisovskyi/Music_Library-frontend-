@@ -3,7 +3,7 @@ import "./DisplayMusic.css";
 const DisplayMusic = (props) => {
   return (
     <div className="content-wrap">
-      {props.allSongs.map((song, index) => {
+      {props.displaySongs.map((song, index) => {
         return (
           <div className="display-music-wrap" key={index}>
             <p className="music-title">{song.title}</p>

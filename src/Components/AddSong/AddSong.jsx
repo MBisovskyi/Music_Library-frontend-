@@ -28,6 +28,7 @@ const AddSong = (props) => {
         <label className="add-song-item">
           Title
           <input
+            required
             className="input-container"
             type="text"
             onChange={(event) => setTitle(event.target.value)}
@@ -36,6 +37,7 @@ const AddSong = (props) => {
         <label className="add-song-item">
           Artist
           <input
+            required
             className="input-container"
             type="text"
             value={newArtist}
@@ -45,6 +47,7 @@ const AddSong = (props) => {
         <label className="add-song-item">
           Album
           <input
+            required
             className="input-container"
             type="text"
             value={newAlbum}
@@ -54,6 +57,7 @@ const AddSong = (props) => {
         <label className="add-song-item">
           Genre
           <input
+            required
             className="input-container"
             type="text"
             value={newGenre}
@@ -63,6 +67,7 @@ const AddSong = (props) => {
         <label className="add-song-item">
           Released Date
           <input
+            required
             className="input-container"
             type="date"
             value={newReleasedDate}
