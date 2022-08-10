@@ -34,6 +34,22 @@ const SearchField = (props) => {
     }
   }
 
+  async function filterByGenre() {
+    let response = await axios.get("http://127.0.0.1:8000/songs/");
+    let genreInput = prompt("Please, enter song genre: ");
+    let songsArray = response.data.filter(function (song) {
+      if (song.genre === genreInput) {
+        return true;
+      }
+    });
+    if (!songsArray[0]) {
+      alert("Song is not found!");
+      props.newSongs(response.data);
+    } else {
+      props.newSongs(songsArray);
+    }
+  }
+
   return (
     <div className="search-field-wrap">
       <div className="search-field-item">
@@ -46,7 +62,7 @@ const SearchField = (props) => {
         <button>release date</button>
       </div>
       <div className="search-field-item">
-        <button>genre</button>
+        <button onClick={filterByGenre}>genre</button>
       </div>
     </div>
   );
