@@ -10,7 +10,12 @@ const SearchField = (props) => {
         return true;
       }
     });
-    props.newSongs(songsArray);
+    if (!songsArray[0]) {
+      alert("Song is not found!");
+      props.newSongs(response.data);
+    } else {
+      props.newSongs(songsArray);
+    }
   }
 
   async function filterByAlbum() {
@@ -21,7 +26,12 @@ const SearchField = (props) => {
         return true;
       }
     });
-    props.newSongs(songsArray);
+    if (!songsArray[0]) {
+      alert("Song is not found!");
+      props.newSongs(response.data);
+    } else {
+      props.newSongs(songsArray);
+    }
   }
 
   return (
