@@ -8,7 +8,7 @@ const DisplayMusic = (props) => {
         return (
           <div className="display-music-wrap" key={index}>
             <p className="music-title">{song.title}</p>
-            <DeleteSong songId={song.id} />
+            <DeleteSong songId={song.id} newSongs={props.newSongs} />
             <div className="music-content-conteiner">
               <div className="display-music-item">
                 <p>Artist/Band: {song.artist}</p>

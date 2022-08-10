@@ -26,7 +26,7 @@ function App() {
         <button onClick={getSongs}>All Songs</button>
       </div>
       <AddSong newSong={setSongs} />
-      <DisplayMusic displaySongs={songs} />
+      <DisplayMusic displaySongs={songs} newSongs={getSongs} />
     </div>
   );
 }
