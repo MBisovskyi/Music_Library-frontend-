@@ -16,13 +16,16 @@ function App() {
   async function getAllSongs() {
     let response = await axios.get("http://127.0.0.1:8000/songs/");
     setSongs(response.data);
-    console.log(response);
+    console.log(response.data);
   }
 
   return (
     <div className="app">
       <NavBar />
       <SearchField />
+      <div className="all-songs">
+        <button onClick={getAllSongs}>All Songs</button>
+      </div>
       <AddSong />
       <DisplayMusic allSongs={songs} />
     </div>

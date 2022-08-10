@@ -17,10 +17,13 @@ const AddSong = (props) => {
       genre: newGenre,
       release_date: newReleasedDate,
     };
-    let response = await axios.post("http://127.0.0.1:8000/songs/", newSong);
+    await axios.post("http://127.0.0.1:8000/songs/", newSong);
   }
   return (
     <form onSubmit={handleSubmit}>
+      <div className="add-song">
+        <button>Add Song</button>
+      </div>
       <div className="add-song-wrap">
         <label className="add-song-item">
           Title
@@ -66,9 +69,6 @@ const AddSong = (props) => {
             onChange={(event) => setReleasedDate(event.target.value)}
           />
         </label>
-      </div>
-      <div className="add-song-button-container">
-        <button type="submit">Submit</button>
       </div>
     </form>
   );
