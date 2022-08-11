@@ -4,7 +4,7 @@ import axios from "axios";
 const SearchField = (props) => {
   async function filterByArtist() {
     let response = await axios.get("http://127.0.0.1:8000/songs/");
-    let artistInput = prompt("Please, enter Artist/Band name: ");
+    let artistInput = prompt("Please, enter Artist/Band name: ").toLowerCase();
     /*eslint-disable-next-line*/
     let songsArray = response.data.filter(function (song) {
       if (song.artist === artistInput) {
@@ -21,7 +21,7 @@ const SearchField = (props) => {
 
   async function filterByAlbum() {
     let response = await axios.get("http://127.0.0.1:8000/songs/");
-    let albumInput = prompt("Please, enter Album name: ");
+    let albumInput = prompt("Please, enter Album name: ").toLowerCase();
     /*eslint-disable-next-line*/
     let songsArray = response.data.filter(function (song) {
       if (song.album === albumInput) {
@@ -38,7 +38,7 @@ const SearchField = (props) => {
 
   async function filterByGenre() {
     let response = await axios.get("http://127.0.0.1:8000/songs/");
-    let genreInput = prompt("Please, enter song genre: ");
+    let genreInput = prompt("Please, enter song genre: ").toLowerCase();
     /*eslint-disable-next-line*/
     let songsArray = response.data.filter(function (song) {
       if (song.genre === genreInput) {
@@ -55,7 +55,7 @@ const SearchField = (props) => {
 
   async function filterByTitle() {
     let response = await axios.get("http://127.0.0.1:8000/songs/");
-    let titleInput = prompt("Please, enter song title: ");
+    let titleInput = prompt("Please, enter song title: ").toLowerCase();
     /*eslint-disable-next-line*/
     let songsArray = response.data.filter(function (song) {
       if (song.title === titleInput) {

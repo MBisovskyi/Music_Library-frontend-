@@ -11,10 +11,10 @@ const AddSong = (props) => {
 
   async function handleSubmit() {
     let newSong = {
-      title: newTitle,
-      artist: newArtist,
-      album: newAlbum,
-      genre: newGenre,
+      title: newTitle.toLowerCase(),
+      artist: newArtist.toLowerCase(),
+      album: newAlbum.toLowerCase(),
+      genre: newGenre.toLowerCase(),
       release_date: newReleasedDate,
     };
     await axios.post("http://127.0.0.1:8000/songs/", newSong);
