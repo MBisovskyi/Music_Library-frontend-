@@ -74,7 +74,7 @@ const SearchField = (props) => {
     let response = await axios.get("http://127.0.0.1:8000/songs/");
     let dateInput = prompt(
       `Please, enter song release date:\n\nDate format: YYYY-MM-DD`
-    );
+    ).toLowerCase();
     /*eslint-disable-next-line*/
     let songsArray = response.data.filter(function (song) {
       if (song.release_date === dateInput) {

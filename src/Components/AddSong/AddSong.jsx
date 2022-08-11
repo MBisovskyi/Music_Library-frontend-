@@ -9,6 +9,12 @@ const AddSong = (props) => {
   const [newGenre, setGenre] = useState("");
   const [newReleasedDate, setReleasedDate] = useState("");
 
+  async function alertSongAdded(response) {
+    if (response.status === 201) {
+      alert("Song is succesfully added!");
+    }
+  }
+
   async function handleSubmit() {
     let newSong = {
       title: newTitle.toLowerCase(),
@@ -17,7 +23,8 @@ const AddSong = (props) => {
       genre: newGenre.toLowerCase(),
       release_date: newReleasedDate,
     };
-    await axios.post("http://127.0.0.1:8000/songs/", newSong);
+    let response = await axios.post("http://127.0.0.1:8000/songs/", newSong);
+    alertSongAdded(response);
   }
   return (
     <form onSubmit={handleSubmit}>
