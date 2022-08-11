@@ -1,23 +1,42 @@
-.search-field-wrap {
-  height: 2.5rem;
+.search-song-wrap {
   width: 70%;
-  background-color: #207faa;
-  margin: auto;
+  background: linear-gradient(rgb(52, 131, 156), rgb(149, 103, 227));
   border-radius: 60px;
   box-shadow: 6px 6px 6px rgb(0, 0, 0, 0.2);
-  border: 1px solid rgb(0, 0, 0, 0.1);
+  border-bottom: 0.5px solid rgb(0, 0, 0, 0.1);
+  border-left: 0.5px solid rgb(0, 0, 0, 0.1);
+  border-right: 0.5px solid rgb(0, 0, 0, 0.1);
   position: fixed;
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
   align-items: center;
   left: 50%;
   transform: translateX(-50%);
   top: 6.5rem;
   z-index: 2;
-  padding: 0.5rem;
 }
 
-.search-field-wrap button {
+.search-song-title-container {
+  font-family: "Comic Sans MS";
+  font-size: 20px;
+  font-weight: 800;
+  color: #ffffff;
+  padding: 0 0.7rem 0.3rem;
+  margin: 1rem 0 1rem;
+  border-bottom: 2px solid #ffffff;
+  border-radius: 10px;
+}
+
+.search-field-items {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 2rem;
+  padding-bottom: 0.5rem;
+}
+
+.search-field-items button {
   font-family: "Comic Sans MS";
   font-size: 18px;
   font-weight: 800;
@@ -27,6 +46,6 @@
   background: none;
 }
 
-.search-field-wrap button:hover {
+.search-field-items button:hover {
   border-bottom: 2px solid #ffffff;
 }

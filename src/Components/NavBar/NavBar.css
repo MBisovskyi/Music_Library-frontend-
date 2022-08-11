@@ -4,7 +4,7 @@
   height: 6rem;
   background: linear-gradient(rgb(149, 103, 227), rgb(52, 131, 156));
   border-radius: 64px;
-  border: 1px solid rgb(0, 0, 0, 0.1);
+  border: 0.5px solid rgb(0, 0, 0, 0.1);
   box-shadow: 6px 6px 6px rgb(0, 0, 0, 0.2);
   position: fixed;
   left: 50%;

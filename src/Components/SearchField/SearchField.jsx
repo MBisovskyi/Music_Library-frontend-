@@ -90,21 +90,26 @@ const SearchField = (props) => {
   }
 
   return (
-    <div className="search-field-wrap">
-      <div className="search-field-item">
-        <button onClick={filterByTitle}>title</button>
+    <div className="search-song-wrap">
+      <div className="search-song-title-container">
+        <p>Search Song by:</p>
       </div>
-      <div className="search-field-item">
-        <button onClick={filterByArtist}>artist/band</button>
-      </div>
-      <div className="search-field-item">
-        <button onClick={filterByAlbum}>album</button>
-      </div>
-      <div className="search-field-item">
-        <button onClick={filterByReleasedDate}>release date</button>
-      </div>
-      <div className="search-field-item">
-        <button onClick={filterByGenre}>genre</button>
+      <div className="search-field-items">
+        <div className="search-field-item">
+          <button onClick={filterByTitle}>title</button>
+        </div>
+        <div className="search-field-item">
+          <button onClick={filterByArtist}>artist/band</button>
+        </div>
+        <div className="search-field-item">
+          <button onClick={filterByAlbum}>album</button>
+        </div>
+        <div className="search-field-item">
+          <button onClick={filterByReleasedDate}>release date</button>
+        </div>
+        <div className="search-field-item">
+          <button onClick={filterByGenre}>genre</button>
+        </div>
       </div>
     </div>
   );
